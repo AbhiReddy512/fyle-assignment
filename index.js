@@ -35,11 +35,11 @@ function startSlideShow() {
   setInterval(nextSlide, 3000);
 }
 
+function navigate() {
+  window.location.href = navigationURL;
+}
+
 $(document).ready(function() {
   showSlide(currentSlideIndex);
   startSlideShow();
-
-  $(".slide-wrapper .overlay-img").click(function() {
-    window.location.href = navigationURL;
-  });
 });
